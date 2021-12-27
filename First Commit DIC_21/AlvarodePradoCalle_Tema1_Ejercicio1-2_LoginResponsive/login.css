@@ -1,0 +1,95 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.main{
+    font-size: 1.250em;
+    font-family: 'Raleway', sans-serif, Helvetica, Arial;
+    height: 100vh;
+    background-image: url("bg.jpg");
+    background-size: cover;
+    background-color: #fff; /*background fallback*/
+    display: grid;    
+}
+.login{
+    background-color: #fff;
+    width: 25%;
+    padding: 80px;
+    display: grid;
+    align-content: center;
+}
+.login__legend{
+    font-weight: 400;
+    margin-bottom: 50px;
+}
+.login__legend--blue{
+    font-weight: 800;
+    color: #32D4A4;
+}
+.p{
+    font-weight: 700;
+    color: #121625;
+    margin-bottom: 10px; /*email y contraseña*/
+}
+.login__form__email,
+.login__form__password,
+.login__form__checkbox
+.login__form__bt{
+    width: 95%;
+    margin-bottom: 30px; /*inputs*/
+    background-color: #F8F8F9; /*placeholders*/
+    padding: 16px 2.5%;
+    border: 0px;
+    border-radius: 6px;
+}
+.login__form__checkbox{
+    font-weight: 500;
+}
+.login__form__checkbox:hover{
+    cursor: pointer;
+}
+.login__form__a-pass--blue{
+    font-weight: 600;
+    color: #32D4A4;
+    margin-bottom: 40px;
+    float: right;
+}
+.login__form__a-bt__button{
+    font-weight: 700;
+    background-color: #32D4A4;
+    color: white;
+    border-radius: 6px;
+    height: 35px;
+    width: 100%;
+    border: 0px;
+}
+.login__form__a-bt__button:hover{
+    cursor: pointer;
+}
+.login__footer{
+    font-weight: 500;
+    color: #A5A8B3;
+    margin-top: 150px;
+}
+.login__footer--underline{
+    text-decoration: underline;
+}
+/*media queries 1580 1260 800 650 400*/
+@media all and (max-width: 1580px){
+    .main{
+        font-size: 1em;  
+    }
+}
+@media all and (max-width: 1239px){
+    .login__form__checkbox{
+        margin-bottom: 20px;
+    }
+    .login__form__a-pass--blue{
+        float: left;
+    }
+}
+@media all and (max-width: 620px){
+    .login{
+        width: 50%;
+    }
+}
