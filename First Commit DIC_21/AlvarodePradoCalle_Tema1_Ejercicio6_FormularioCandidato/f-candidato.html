@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<body class="body">
+    <head>
+        <meta charset="utf-8">
+        <html lang="es-ES">
+      
+        <meta name="author" content="Alvaro de Prado">
+        <meta name="description" content="...">
+
+        <link rel="author" href="https://www.linkedin.com/in/%C3%A1lvaro-de-prado-calle-740062221/">
+        <link rel="icon" sizes="64x64" href="/fav-icon.svg">
+
+        <link href="f-candidato.css" type="text/css" rel="stylesheet">
+
+        <!--Font: (400, 500, 600, 700, 800) Raleway('Raleway', sans-serif)-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+        <!--Adaptar a todos los dispositivos-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <!-- Bootstrap CSS -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+        <title>Tabla</title>
+    </head>
+    <main class="main">
+        <article class="main__f-candidato">
+            <section class="main__f-candidato__header">
+                <div class="main__f-candidato__header__foto-cont">
+                    <img class="main__f-candidato__header__foto-cont__foto" src="noprofilephoto.jpg" alt="profile-photo">
+                </div>
+                <div class="main__f-candidato__header__datos">
+                    <div class="main__f-candidato__header__datos__nombre">
+                        <p class="main__f-candidato__header__datos__nombre__nombre-alumno">Nombre Alumno</p>
+                    </div>
+                    <div class="main__f-candidato__header__datos__lugar">
+                        <i class="fas fa-map-marker-alt main__f-candidato__header__datos__lugar__icono"></i>
+                        <p class="main__f-candidato__header__datos__lugar__ciudad">Valencia</p>
+                        <span class="main__f-candidato__header__datos__lugar__separacion">|</span>
+                        <p class="main__f-candidato__header__datos__lugar__pais">España</p>
+                    </div>
+                </div>
+            </section>
+            <section class="main__f-candidato__cuerpo">
+                <div class="main__f-candidato__cuerpo__nombre-apellidos">
+                    <label for="nombre-apellidos" class="main__f-candidato__cuerpo__nombre-apellidos__label">Nombre y Apellidos</label>
+                    <input class="main__f-candidato__cuerpo__nombre-apellidos__input" id="nombre-apellidos" name="nombre-apellidos" type="text" value="Nombre Alumno">
+                </div>
+                <div class="main__f-candidato__cuerpo__centro">
+                    <div class="main__f-candidato__cuerpo__centro__telefono">
+                        <label for="telefono" class="main__f-candidato__cuerpo__centro__telefono__label">Nº Teléfono</label>
+                        <input class="main__f-candidato__cuerpo__centro__telefono__input" id="telefono" name="telefono" type="text" value="+34 654 85 52 48">
+                    </div>
+                    <div class="main__f-candidato__cuerpo__centro__email">
+                        <label for="email" class="main__f-candidato__cuerpo__centro__email__label">Email</label>
+                        <input class="main__f-candidato__cuerpo__centro__email__input" id="email" name="email" type="email" value="hcliment@gmail.com">
+                    </div>
+                    <div class="main__f-candidato__cuerpo__centro__pais">
+                        <label for="pais" class="main__f-candidato__cuerpo__centro__pais__label">País</label>
+                        <input class="main__f-candidato__cuerpo__centro__pais__input" id="pais" name="pais" type="text" value="España">
+                    </div>
+                    <div class="main__f-candidato__cuerpo__centro__ciudad">
+                        <label for="ciudad" class="main__f-candidato__cuerpo__centro__ciudad__label">Ciudad</label>
+                        <input class="main__f-candidato__cuerpo__centro__ciudad__input" id="ciudad" name="ciudad" type="text" value="Valencia">
+                    </div>
+                    <div class="main__f-candidato__cuerpo__centro__traslado">
+                        <label for="traslado" class="main__f-candidato__cuerpo__centro__traslado__label">Traslado</label>
+                        <input class="main__f-candidato__cuerpo__centro__traslado__input" id="traslado" name="traslado" type="text" value="No">
+                    </div>
+                    <div class="main__f-candidato__cuerpo__centro__presencialidad">
+                        <label for="presencialidad" class="main__f-candidato__cuerpo__centro__presencialidad__label">Presencialidad</label>
+                        <input class="main__f-candidato__cuerpo__centro__presencialidad__input" id="presencialidad" name="presencialidad" type="text" value="En remoto">
+                    </div>
+                </div>
+                <div class="main__f-candidato__cuerpo__cv">
+                    <label for="documento-cv" class="main__f-candidato__cuerpo__cv__label">Documento CV</label>
+                    <div class="main__f-candidato__cuerpo__cv__buttons">
+                       <button class="main__f-candidato__cuerpo__cv__buttons__nube">
+                            <i class="fas fa-cloud-upload-alt"></i>
+                            Subir de nuevo
+                        </button>
+                        <button class="main__f-candidato__cuerpo__cv__buttons__papelera">
+                            <i class="far fa-trash-alt"></i>
+                            Borrar
+                        </button> 
+                    </div>
+                </div>
+                <div class="main__f-candidato__cuerpo__etiquetas">
+                    <label for="etiquetas" class="main__f-candidato__cuerpo__etiquetas__label">Etiquetas</label>
+                    <input class="main__f-candidato__cuerpo__etiquetas__input" id="etiquetas" name="etiquetas" type="text" placeholder="Escribe para buscar...">
+                    <div class="main__f-candidato__cuerpo__etiquetas__javascript">
+                        (etiquetas)
+                    </div>
+                </div>
+            </section>
+        </article>
+    </main>
+    
+    <!--FONT AWESOME-->
+    <script src="https://kit.fontawesome.com/7635c7de47.js" crossorigin="anonymous"></script>
+    
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+</body>
+</html>

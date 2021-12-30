@@ -1,0 +1,277 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.body{
+    background-color: #F8F8F9;
+    font-family: 'Raleway', sans-serif, Helvetica, Arial;
+    
+    /*Para una mejor visualización del formulario (eliminar ésto de debajo según su uso posterior):*/
+    display: grid;
+    place-content: center;
+    margin-top: 100px;
+    /*---------hasta aquí---------*/
+}
+.main__f-candidato{
+    grid-area: filtros;
+    background-color: #fff;
+    border-radius: 18px;
+    padding: 25px;
+}
+.main__f-candidato__header{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 40px;
+}
+.main__f-candidato__header__foto-cont__foto{
+    width: 90px;
+    height: 90px;
+    border: 5px solid #E6E6EA;
+    border-radius: 28%;
+    margin-right: 20px;
+}
+.main__f-candidato__header__datos{
+    display: flex;
+    flex-direction: column;
+}
+.main__f-candidato__header__datos__nombre__nombre-alumno{
+    font-weight: 800;
+    font-size: 1.5em;    
+}
+.main__f-candidato__header__datos__lugar{
+    display: flex;
+    flex-direction: row;
+    font-size: 1em;
+    color: #A5A8B3;
+}
+.main__f-candidato__header__datos__lugar__ciudad{
+    padding: 0px 10px;
+}
+.main__f-candidato__header__datos__lugar__separacion{
+    padding: 0px 2px;
+}
+.main__f-candidato__header__datos__lugar__pais{
+    padding: 0px 10px;
+}
+.main__f-candidato__cuerpo{
+    display: flex;
+    flex-direction: column;
+    font-size: 1em;
+}
+.main__f-candidato__cuerpo__nombre-apellidos{
+    display: flex;
+    flex-direction: column;
+    font-weight: 700;
+}
+.main__f-candidato__cuerpo__nombre-apellidos__input{
+    background-color: #F8F8F9;
+    border: 0px;
+    border-radius: 6px;
+    padding: 8px;
+    font-weight: 500;
+    margin-bottom: 20px;
+    margin-top: 10px;
+    width: 100%;
+}
+.main__f-candidato__cuerpo__centro{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 0px 25px;
+}
+.main__f-candidato__cuerpo__centro__telefono{
+    display: flex;
+    flex-direction: column;
+    font-weight: 700;
+}
+.main__f-candidato__cuerpo__centro__telefono__input{
+    background-color: #F8F8F9;
+    border: 0px;
+    border-radius: 6px;
+    padding: 8px;
+    font-weight: 500;
+    margin-bottom: 20px;
+    margin-top: 10px;
+    width: 100%;
+}
+.main__f-candidato__cuerpo__centro__email{
+    display: flex;
+    flex-direction: column;
+    font-weight: 700;
+}
+.main__f-candidato__cuerpo__centro__email__input{
+    background-color: #F8F8F9;
+    border: 0px;
+    border-radius: 6px;
+    padding: 8px;
+    font-weight: 500;
+    margin-bottom: 20px;
+    margin-top: 10px;
+    width: 100%;
+}
+.main__f-candidato__cuerpo__centro__pais{
+    display: flex;
+    flex-direction: column;
+    font-weight: 700;
+}
+.main__f-candidato__cuerpo__centro__pais__input{
+    background-color: #F8F8F9;
+    border: 0px;
+    border-radius: 6px;
+    padding: 8px;
+    font-weight: 500;
+    margin-bottom: 20px;
+    margin-top: 10px;
+    width: 100%;
+}
+.main__f-candidato__cuerpo__centro__ciudad{
+    display: flex;
+    flex-direction: column;
+    font-weight: 700;
+}
+.main__f-candidato__cuerpo__centro__ciudad__input{
+    background-color: #F8F8F9;
+    border: 0px;
+    border-radius: 6px;
+    padding: 8px;
+    font-weight: 500;
+    margin-bottom: 20px;
+    margin-top: 10px;
+    width: 100%;
+}
+.main__f-candidato__cuerpo__centro__traslado{
+    display: flex;
+    flex-direction: column;
+    font-weight: 700;
+}
+.main__f-candidato__cuerpo__centro__traslado__input{
+    background-color: #F8F8F9;
+    border: 0px;
+    border-radius: 6px;
+    padding: 8px;
+    font-weight: 500;
+    margin-bottom: 20px;
+    margin-top: 10px;
+    width: 100%;
+}
+.main__f-candidato__cuerpo__centro__presencialidad{
+    display: flex;
+    flex-direction: column;
+    font-weight: 700;
+}
+.main__f-candidato__cuerpo__centro__presencialidad__input{
+    background-color: #F8F8F9;
+    border: 0px;
+    border-radius: 6px;
+    padding: 8px;
+    font-weight: 500;
+    margin-bottom: 20px;
+    margin-top: 10px;
+    width: 100%;
+}
+.main__f-candidato__cuerpo__cv{
+    display: flex;
+    flex-direction: column;
+    font-weight: 700;
+}
+.main__f-candidato__cuerpo__cv__buttons{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 20px;
+    margin-top: 10px;
+}
+.main__f-candidato__cuerpo__cv__buttons__nube{
+    background-color: #A5A8B3;
+    border: 1px solid #E6E6EA;
+    border-radius: 6px;
+    padding: 10px;
+    font-weight: 700;
+}
+.main__f-candidato__cuerpo__cv__buttons__papelera{
+    background-color: #fff;
+    border: 1px solid #E6E6EA;
+    border-radius: 6px;
+    padding: 10px;
+    font-weight: 700;
+}
+.main__f-candidato__cuerpo__etiquetas{
+    display: flex;
+    flex-direction: column;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+.main__f-candidato__cuerpo__etiquetas__input{
+    background-color: #F8F8F9;
+    border: 0px;
+    border-radius: 6px;
+    padding: 8px;
+    font-weight: 500;
+    margin-bottom: 5px;
+    margin-top: 10px;
+    width: 100%;
+}
+/*
+.main__filtros-busqueda-container__juntar__titulo{
+    font-weight: 700;
+}
+.main__filtros-busqueda-container__juntar__trash{
+    color: #32D4A4;
+    margin-left: 40px;
+}
+.main__filtros-busqueda-container__juntar__trash:hover{
+    cursor: pointer;
+}
+.main__filtros-busqueda-container__subtitulo{
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+.main__filtros-busqueda-container__etiquetas-buscador{
+    background-color: #E6E6EA;
+    border: 0px;
+    border-radius: 6px;
+    padding: 8px;
+    font-weight: 500;
+    margin-bottom: 20px;
+    width: 100%;
+}
+.main__filtros-busqueda-container__pais-buscador{
+    background-color: #E6E6EA;
+    border: 0px;
+    border-radius: 6px;
+    padding: 8px;
+    font-weight: 500;
+    margin-bottom: 20px;
+    width: 100%;
+}
+.main__filtros-busqueda-container__ciudad-buscador{
+    background-color: #E6E6EA;
+    border: 0px;
+    border-radius: 6px;
+    padding: 8px;
+    font-weight: 500;
+    margin-bottom: 20px;
+    width: 100%;
+}
+.main__filtros-busqueda-container__modalidad-buscador{
+    background-color: #E6E6EA;
+    border: 0px;
+    border-radius: 6px;
+    padding: 8px;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+.main__filtros-busqueda-container__modalidad-buscador:hover{
+    cursor: pointer;
+}
+.main__filtros-busqueda-container__traslado-buscador{
+    background-color: #E6E6EA;
+    border: 0px;
+    border-radius: 6px;
+    padding: 8px;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+.main__filtros-busqueda-container__traslado-buscador:hover{
+    cursor: pointer;
+}
+*/
